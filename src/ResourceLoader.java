@@ -13,7 +13,6 @@ public class ResourceLoader {
 	public static BufferedImage getImage(String path) {
 		BufferedImage img = null;
 		try {
-			System.out.println(path);
 			img = ImageIO.read(new File(path));
 		} catch (IOException e) {
 			System.err.println("ResourceLoader: File not found!");

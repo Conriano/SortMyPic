@@ -14,7 +14,7 @@ public static void main(String[] args) {
 			System.err.println("Usage: java sortmypic imagePath imgDestinyPath");
 			System.exit(1);
 		}
-	
+
 		BufferedImage img = ResourceLoader.getImage(args[0]);
 		
 		int[] pixel = GetPixel.getPixelArray(img, img.getWidth(), img.getHeight());
@@ -28,6 +28,21 @@ public static void main(String[] args) {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+		System.out.print("Sorted picture created\n");
+		System.out.print("Your picture has " + countDifferentColours(pixel) + " different colour(s)\n");
 	}
+	
+public static int countDifferentColours(int[] arr){
+	int count = 1;
+	
+	for(int i = 0; i < arr.length -1; i++){
+		if(arr[i] < arr[i+1]){
+			count++;
+		}	
+	}
+	
+	return count;
+}
 
 }
