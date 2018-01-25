@@ -3,11 +3,11 @@ import java.awt.image.BufferedImage;
 public class GetPixel {
 
 	/**
-	 * transformiert ein zeilenweise eingelesenes Bild in ein pixel-Array mit entsprechenden RGB-Werten
-	 * @param img ist das Bild
-	 * @param width ist die Breite des Bildes
-	 * @param height ist die Hoehe des Bildes
-	 * @return ist das pixel-Array 
+	 * generates a pixel array
+	 * @param is your picture source
+	 * @param width of the picture
+	 * @param height of the picture
+	 * @return the array 
 	 */
 	public static int[] getPixelArray(BufferedImage img, int width, int height) {
 			

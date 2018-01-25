@@ -6,9 +6,9 @@ import javax.imageio.ImageIO;
 public class ResourceLoader {
 	
 	/**
-	 * Speichert ein Bild im "images"-Ordner als BufferedImage
-	 * @param fileName ist der Name der Datei
-	 * @return ist das Bild als BufferedImage
+	 * reads a picture by a given path
+	 * @param path - path of the picture
+	 * @return the picture as BufferedImage
 	 */
 	public static BufferedImage getImage(String path) {
 		BufferedImage img = null;
