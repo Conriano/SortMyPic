@@ -13,5 +13,5 @@ First method: No Jar-File
 
 Second method: Eclipse and Runnable Jar-File
 1) Open Eclipse and export as runnable Jar-File (could name it "sortmypic.jar")
-2) Open your command line and change to src/
+2) Open your command line and change to the directory with the new sortmypic.jar
 3) Ececute: java -jar sortmypic.jar yourPicture.xxx yourDestiny.xxx
