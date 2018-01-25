@@ -12,12 +12,8 @@ First method: No Jar-File
 2) Compile the tool: javac *.java 
 3) Execute: java -cp . Launcher yourPicture.xxx yourDestiny.xxx
 
-This method gives information about the count of different colours 
-
 
 Second method: Eclipse and Runnable Jar-File
 1) Open Eclipse and export as runnable Jar-File (could name it "sortmypic.jar")
 2) Open your command line and change to the directory with the new sortmypic.jar
 3) Ececute: java -jar sortmypic.jar yourPicture.xxx yourDestiny.xxx
-
-This method does not give the information about the count (first method)
